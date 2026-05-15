@@ -222,7 +222,7 @@ export const siteConfig = {
   // Estos valores son documentacion. Para cambiar colores en Tailwind v4,
   // edita el archivo src/app/globals.css y modifica las variables CSS.
   colors: {
-    primary: "indigo-600",    // Color principal (botones, acentos)
+    primary: "black",         // Color principal (botones, acentos)
     secondary: "gray-900",    // Color de textos principales
     accent: "indigo-50",      // Fondos suaves y badges
     background: "white",      // Fondo general
