@@ -40,7 +40,7 @@ export default function FAQ() {
   const { heading, subheading, items } = siteConfig.faq;
 
   return (
-    <section id="faq" className="py-20 px-6 bg-gray-50">
+    <section id="faq" className="py-20 px-6 bg-amber-50/60">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">

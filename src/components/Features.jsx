@@ -22,7 +22,7 @@ export default function Features() {
   const { heading, subheading, items } = siteConfig.features;
 
   return (
-    <section id="features" className="py-20 px-6 bg-gray-50">
+    <section id="features" className="py-20 px-6 bg-amber-50/60">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -36,9 +36,9 @@ export default function Features() {
           {items.map((feature, index) => (
             <div
               key={index}
-              className="bg-white p-8 rounded-2xl border border-gray-100 hover:shadow-lg transition-shadow"
+              className="bg-white/90 p-8 rounded-2xl border border-amber-200 hover:shadow-lg transition-shadow"
             >
-              <div className="w-12 h-12 bg-sky-50 text-sky-500 rounded-xl flex items-center justify-center mb-5">
+              <div className="w-12 h-12 bg-amber-100 text-amber-700 rounded-xl flex items-center justify-center mb-5">
                 {iconMap[feature.icon] ?? iconMap.settings}
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-3">

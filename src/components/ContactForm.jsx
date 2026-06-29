@@ -94,7 +94,7 @@ export default function ContactForm() {
               href={schedulingUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block mt-4 px-6 py-2.5 border border-black text-black font-medium rounded-full hover:bg-gray-100 transition-colors text-sm"
+              className="inline-block mt-4 px-6 py-2.5 border-2 border-amber-800 text-amber-900 font-medium rounded-full hover:bg-amber-100 transition-colors text-sm"
             >
               {schedulingCta}
             </a>
@@ -104,7 +104,7 @@ export default function ContactForm() {
         <form
           onSubmit={handleSubmit}
           noValidate
-          className="bg-white border border-gray-200 rounded-2xl p-8 space-y-6"
+          className="bg-white/90 border border-amber-200 rounded-2xl p-8 space-y-6"
         >
           {/* Nombre */}
           <div>
@@ -118,7 +118,7 @@ export default function ContactForm() {
               value={form.name}
               onChange={handleChange}
               placeholder={formConfig.namePlaceholder}
-              className={`w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-transparent transition ${
+              className={`w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent transition ${
                 errors.name ? "border-red-400 bg-red-50" : "border-gray-300"
               }`}
             />
@@ -139,7 +139,7 @@ export default function ContactForm() {
               value={form.email}
               onChange={handleChange}
               placeholder={formConfig.emailPlaceholder}
-              className={`w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-transparent transition ${
+              className={`w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent transition ${
                 errors.email ? "border-red-400 bg-red-50" : "border-gray-300"
               }`}
             />
@@ -163,7 +163,7 @@ export default function ContactForm() {
               value={form.phone}
               onChange={handleChange}
               placeholder={formConfig.phonePlaceholder}
-              className={`w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-transparent transition ${
+              className={`w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent transition ${
                 errors.phone ? "border-red-400 bg-red-50" : "border-gray-300"
               }`}
             />
@@ -184,7 +184,7 @@ export default function ContactForm() {
               value={form.message}
               onChange={handleChange}
               placeholder={formConfig.messagePlaceholder}
-              className={`w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-sky-400 focus:border-transparent transition resize-none ${
+              className={`w-full px-4 py-3 border rounded-xl focus:outline-none focus:ring-2 focus:ring-amber-400 focus:border-transparent transition resize-none ${
                 errors.message ? "border-red-400 bg-red-50" : "border-gray-300"
               }`}
             />
@@ -196,7 +196,7 @@ export default function ContactForm() {
           <button
             type="submit"
             disabled={status === "loading"}
-            className="w-full py-3.5 bg-black text-white font-medium rounded-full hover:bg-zinc-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full py-3.5 bg-red-700 text-white font-medium rounded-full hover:bg-red-800 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {status === "loading" ? formConfig.sendingButton : formConfig.submitButton}
           </button>

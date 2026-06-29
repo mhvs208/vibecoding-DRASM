@@ -5,7 +5,7 @@ export default function Footer() {
   const { tagline, links, copyright } = siteConfig.footer;
 
   return (
-    <footer className="border-t border-gray-200 py-12 px-6">
+    <footer className="border-t border-amber-200 py-12 px-6 bg-amber-50/40">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="text-center md:text-left">
           <span className="text-lg font-bold text-gray-900">{name}</span>
@@ -17,7 +17,7 @@ export default function Footer() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-sm text-gray-500 hover:text-sky-500 transition-colors"
+                className="text-sm text-gray-500 hover:text-red-700 transition-colors"
               >
                 {link.label}
               </a>

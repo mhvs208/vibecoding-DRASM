@@ -222,11 +222,11 @@ export const siteConfig = {
   // Estos valores son documentacion. Para cambiar colores en Tailwind v4,
   // edita el archivo src/app/globals.css y modifica las variables CSS.
   colors: {
-    primary: "black",         // Color principal (botones, acentos)
-    secondary: "gray-900",    // Color de textos principales
-    accent: "sky-50",         // Fondos suaves y badges
-    accentText: "sky-500",    // Textos de acento (titulos, enlaces, iconos)
-    background: "white",      // Fondo general
+    primary: "red-700",       // Color principal (botones rojo granero)
+    secondary: "amber-800",   // Color madera (botones secundarios, bordes)
+    accent: "amber-50",       // Fondos suaves y badges
+    accentText: "amber-700",  // Textos de acento (titulos, enlaces, iconos)
+    background: "amber-50",   // Fondo general con huellas de animales
   },
 
   // ─────────────────────────────────────────────
